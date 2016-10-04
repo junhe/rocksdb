@@ -43,6 +43,10 @@ ifeq ($(MAKECMDGOALS),dbg)
 	DEBUG_LEVEL=2
 endif
 
+ifeq ($(MAKECMDGOALS),db_bench)
+	DEBUG_LEVEL=0
+endif
+
 ifeq ($(MAKECMDGOALS),clean)
 	DEBUG_LEVEL=0
 endif
